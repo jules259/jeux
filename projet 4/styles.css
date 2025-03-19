@@ -1,0 +1,166 @@
+/* Je viens réinitialiser l'integralité de ma page web */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-color: rgba(177, 191, 216, 0.795);
+    /* Permet de faire en sorte que ma page face au minimum la taille de l'ecrant utilisateur */
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    /* Permet simplement de rajouter de la marge et aisin écarter les elements */
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    /* Utilisé pour definire la police d'écriture */
+    font-size: 10ch;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 23px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+/* Permet de séléctionner uniquement les inputes d'un type */
+input[type='radio'] {
+    /* Je leurs ajoute un éspacement */
+    margin-right: 10px;
+}
+
+/* Permet d'éviter que l'écriture dans l'inpute soit collé a la bordure */
+label:first-of-type {
+    margin-right: 30px;
+}
+
+.interface {
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 500px;
+    /* Permet de faire un dégradé de couleur */
+    background: linear-gradient(70deg, rgba(0, 0, 255, 0.534), rgba(255, 191, 201, 0.726));
+}
+
+.motsPropose {
+    display: flex;
+    align-items: center;
+    font-size: 4ch;
+    font-weight: bolder;
+    width: 400px;
+    height: 50px;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    background-color: rgba(252, 252, 252, 0.753);
+    margin-top: 30px;
+}
+
+#VotreNom {
+    text-align: center;
+}
+
+#Reponse {
+    margin-top: 10px;
+    border: 0;
+    padding: 10px;
+    width: 296px;
+    height: 30px;
+    border-radius: 9px;
+    font-size: 2ch;
+    /* Permet de mettre l'écriture en gras */
+    font-weight: bolder;
+}
+
+#nom,
+#email {
+    margin-top: 10px;
+    border: 0;
+    padding: 10px;
+    width: 250px;
+    height: 30px;
+    border-radius: 9px;
+    font-size: 2ch;
+    font-weight: bolder;
+}
+
+#texte {
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 10px;
+    border: 0;
+    padding: 0;
+    height: 30px;
+    width: 100px;
+    border-radius: 9px;
+}
+
+/* Permet que aux survole du boutton ils change de couleur */
+button:hover {
+    cursor: pointer;
+    background-color: rgba(33, 37, 218, 0.705);
+}
+
+/* Lors du clic sur le boutton permet d'ajoute un effet pour signaler que le boutton à était clic */
+button:focus {
+    background-color: rgb(100, 175, 25);
+    border: 2px solid red;
+}
+
+.Score {
+    margin-top: 30px;
+    font-size: 2ch;
+    font-weight: bolder;
+}
+
+.Share {
+    margin-top: 10px;
+}
+
+.PopUp {
+    border-radius: 9px;
+    width: 300px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Permet de bouger un élément sur axe X;Y */
+    transform: translate(-0%, -110%);
+    background-color: rgb(228, 112, 112);
+    display: none;
+
+}
+
+#message-erreur {
+    padding: 5px;
+    font-size: 1.5ch;
+    color: rgb(0, 0, 0);
+}

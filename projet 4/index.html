@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="CFListe.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="popUp.js" defer></script>
+    <script src="luncher.js" defer></script>
+    <title>Mots et Phrase</title>
+  </head>
+  <body>
+    <header>
+      <h1>TapTap</h1>
+    </header>
+    <div>
+      <h2>TapTap te permet d'écrire plus vite</h2>
+    </div>
+    <main>
+      <!-- Permet de gerer l'interface utilisateur -->
+      <div class="interface">
+        <h3>Choisissez Phrases ou Mots</h3>
+        <!-- Choix utilisateur boutton phrases ou mots -->
+        <div class="Option">
+          <input type="radio" name="Option" id="Mots" value="1" checked />
+          <label for="Mots">Mots</label>
+          <input type="radio" name="Option" id="Phrases" value="2" />
+          <label for="Phrases">Phrases</label>
+        </div>
+        <!-- zone de mots ou phrases proposé par l'utilisateur -->
+        <div class="motsPropose"><span>TapTap</span></div>
+        <div>
+          <!-- input qui permet a l'utilisateur d'ecrires sa réponse -->
+          <input type="text" name="Reponse" id="Reponse" />
+          <button id="valider">Valider</button>
+          <!-- //Boutton validation -->
+        </div>
+        <!-- Permet d'afficher le score -->
+        <div class="Score">Score <span>0</span></div>
+        <!-- Permet de partager le résultat -->
+        <div><button id="Share">Partager</button></div>
+      </div>
+    </main>
+    <!-- PopoUp -->
+    <div class="PopUp">
+      <h4>Partagez votre score</h4>
+      <div>
+        <p id="VotreNom">Votre Nom</p>
+        <!-- Le joueur ecrit son nom -->
+        <input type="text" name="Nom" id="nom" placeholder="Nom" />
+      </div>
+      <p id="texte">Avec qui souhaitez vous partager ?</p>
+      <!-- Le jouer ecrit son mail -->
+      <div>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email Please"
+        />
+      </div>
+      <!-- boutton envoyer -->
+      <div><button id="Envoyer">Envoyer</button></div>
+    </div>
+  </body>
+</html>
