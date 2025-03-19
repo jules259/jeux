@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header><h1>Calculatrice</h1></header>
+    <main>
+      <div class="calculette">
+        <!-- autofocus permet de placer le curseur automatiquement sur le champ selectionné -->
+        <div><input type="text" id="resultat" /></div>
+        <div class="nombre">
+          <button type="reset" id="ac">ac</button>
+          <button type="submit" id="%">%</button>
+          <button type="submit" id="°">°</button>
+          <button type="submit" id="-">-</button>
+          <button type="submit" id="1" class="number">1</button>
+          <button type="submit" id="2" class="number">2</button>
+          <button type="submit" id="3" class="number">3</button>
+          <button type="submit" id="x">X</button>
+          <button type="submit" id="4" class="number">4</button>
+          <button type="submit" id="5" class="number">5</button>
+          <button type="submit" id="6" class="number">6</button>
+          <button type="submit" id="/">/</button>
+          <button type="submit" id="7" class="number">7</button>
+          <button type="submit" id="8" class="number">8</button>
+          <button type="submit" id="9" class="number">9</button>
+          <button type="submit" id="+">+</button>
+          <button type="submit" id="0" class="number">0</button>
+          <button type="submit" id="²">²</button>
+          <button type="submit" id=",">,</button>
+          <button type="submit" id="=">=</button>
+        </div>
+      </div>
+    </main>
+    <div class="cursor" id="cursor"></div>
+  </body>
+</html>
