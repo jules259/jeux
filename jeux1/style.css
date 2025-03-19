@@ -1,0 +1,82 @@
+/* 
+Je réinitalise toutes les : 
+    marge
+    padding
+    border
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* je mes du style a mon titre */
+
+h1 {
+    display: flex;
+    /* Permet de centrer sur l'axe des x */
+    justify-content: center;
+    /* Permet de centrer sur lm'axe des Y */
+    align-items: center;
+    margin-top: 20px;
+    /* Permet de gerer la taille du titre en fct de la fenêtre navigateur */
+    font-size: clamp(1rem, 3vw, 4rem);
+    color: color-mix(in srgb, black 15%, red 85%);
+}
+
+/* Je mes du style a mon tableau */
+
+.tableau {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Je viens selec seulement les boutons de mon tableau */
+
+.tableau button {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: #d1d16673;
+    background-size: contain;
+}
+
+/* Je viens selection un effet sur les boutons lors de l'appuis */
+
+button:active {
+    /* transform permet de créé un effet de profondeur je translate sur x,y */
+    transform: translate(2px, -1px);
+    color: rgb(247, 22, 22);
+    background-color: rgba(0, 0, 0, 0.151);
+}
+
+/* Select le pied de page */
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+/* Selec id bouton partager */
+
+#partager {
+    height: 20px;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 46%);
+    transition:
+        transform 0.15s,
+        background-color 0.15s;
+}
+
+/* Selec img et donne un style */
+
+img {
+    height: 90px;
+    width: 90px;
+}
